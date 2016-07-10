@@ -1,4 +1,4 @@
-package bb.Controllers;
+package bb.controllers;
 
 import bb.model.Person;
 import bb.repository.PersonRepository;
