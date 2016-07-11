@@ -75,7 +75,6 @@
             <artifactId>jquery</artifactId>
             <version>2.1.1</version>
         </dependency>
-<<<<<<< HEAD
         <dependency>
             <groupId>com.jayway.restassured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -87,8 +86,6 @@
             <version>1.4.192</version>
         </dependency>
 
-=======
->>>>>>> 0a3d792ec39a26f25bd8c662e710b181d014a5d4
 
     </dependencies>
 
