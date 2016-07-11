@@ -14,10 +14,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class UsingCardService {
 
-
     @Autowired(required = false)
     CardRepository cardRepository;
-
 
     public boolean addCardOwner(PersonDTO personDTO, CardDTO cardDTO) {
         if (checkOwnerCard(personDTO, cardDTO)) {
@@ -34,9 +32,10 @@ public class UsingCardService {
     }
 
     public boolean checkOwnerCard(PersonDTO personDTO, CardDTO cardDTO) {// Any Person and Card have the same id (without betweenes classes)
-//        if (cardRepository.findById(cardDTO.getId()).getId() == personDTO.getId())
-//            return true;
-//        else
+
+        if (cardRepository.findById(cardDTO.getId()).getId() == personDTO.getId())
+            return true;
+        else
             return false;
     }
 

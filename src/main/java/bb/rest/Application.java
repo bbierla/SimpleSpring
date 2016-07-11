@@ -14,9 +14,9 @@ import org.springframework.context.annotation.ComponentScan;
 public class Application {
 
     public static void main(String[] args) {
-      ApplicationContext ctx =   SpringApplication.run(Application.class, args);
-      for(String s: ctx.getBeanDefinitionNames())
-          System.out.println(s);
-    }
+        ApplicationContext ctx = SpringApplication.run(Application.class, args);
+        for (String s : ctx.getBeanDefinitionNames())
+            System.out.println(s);
 
+    }
 }

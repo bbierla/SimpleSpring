@@ -15,10 +15,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class FixDeviceService {
 
+
     @Autowired(required = false)
     private PersonRepository personRepository;
 
-    @Autowired(required = false)
+    @Autowired
     private DeviceRepository deviceRepository;
 
     public boolean fixDevice(DeviceDTO deviceDTO) {

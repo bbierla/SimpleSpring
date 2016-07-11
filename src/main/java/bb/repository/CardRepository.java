@@ -14,10 +14,6 @@ import java.util.List;
 public interface CardRepository extends PagingAndSortingRepository<Card, Integer>
 {
     List<Card> findByName(@Param("name") String name);
-
     //Card findByValue(@Param("value") String value);
     Card findById(@Param("id") int id);
-//
-
-
 }
