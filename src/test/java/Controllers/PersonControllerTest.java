@@ -16,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.context.annotation.Profile;
+
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -80,7 +81,7 @@ public class PersonControllerTest {
         Response response = get("/baza");
 
         assertEquals(200, response.getStatusCode());
-
+        
         String json = response.asString();
         JsonPath jsonPath = new JsonPath(json);
         //assertTrue("1", jsonPath.get("id" ));
